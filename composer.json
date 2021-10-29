@@ -16,5 +16,31 @@
             "role": "Developer"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "FullStackAppCo\\Windicator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FullStackAppCo\\Windicator\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "FullStackAppCo\\Windicator\\ServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.22"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
