@@ -11,6 +11,6 @@ class ServiceProvider extends BaseProvider
         $this->loadViewsFrom(__DIR__ . '/resources/views', 'windicator');
         $this->publishes([
             __DIR__ . '/resources/views' => resource_path('views/vendor/windicator'),
-        ], 'windicator-assets');
+        ], 'windicator');
     }
 }
